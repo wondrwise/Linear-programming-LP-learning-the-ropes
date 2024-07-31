@@ -77,7 +77,23 @@ def max_profit(profits, resource_consumption, resource_availability):
 
 
 
+# Data 
 
+profits = [5,4,3]
+resource_consumption = [
+    [2,3,1], # Resource1 consumption
+    [1,2,3]  # Resource2 consumption
+    ]
+resource_availability = [100, 80]
 
+# run the function
+
+status, optimal_quantities, total_profit = max_profit(profits, resource_consumption, resource_availability)
+
+# print results
+
+print("Status:", status)
+print("Optimal quantities of each product:", optimal_quantities)
+print("Maximum Profit:", total_profit)
 
 
